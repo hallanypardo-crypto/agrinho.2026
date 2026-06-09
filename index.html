@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>EcoAgro - Preservação de Rios e Nascentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- ============================================ -->
+    <!-- CABEÇALHO DO SITE                             -->
+    <!-- ============================================ -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🌿 EcoAgro</h1>
+                <p>Agro forte, futuro sustentável</p>
+            </div>
+            <!-- Menu de navegação -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- CONTEÚDO PRINCIPAL                            -->
+    <!-- ============================================ -->
+    <main>
+
+        <!-- SEÇÃO HOME / INTRODUÇÃO -->
+        <section id="home" class="secao">
+            <div class="container">
+                <div class="hero">
+                    <h2>EcoAgro</h2>
+                    <p class="destaque">Produção agrícola que une alimento saudável, respeito ao meio ambiente e sustentabilidade econômica e social.</p>
+                    <p>Nosso foco é conscientizar sobre a <strong>poluição de rios e nascentes</strong> e apresentar soluções sustentáveis para os agricultores.</p>
+                    <a href="#quiz" class="btn-principal">🎯 Teste seus conhecimentos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROBLEMA -->
+        <section id="problema" class="secao fundo-claro">
+            <div class="container">
+                <h2 class="titulo-secao">💧 O Problema: Poluição de Rios e Nascentes</h2>
+                <div class="conteudo-duas-colunas">
+                    <div class="texto">
+                        <p>A poluição dos rios e nascentes é um dos maiores desafios ambientais da atualidade. Sem rios limpos, nossa cidade fica sem água limpa para consumo, irrigação e sobrevivência dos ecossistemas.</p>
+                        <p>As principais causas da poluição nas áreas rurais são:</p>
+                        <ul>
+                            <li>🌾 Uso excessivo de agrotóxicos</li>
+                            <li>💩 Esgoto e dejetos animais sem tratamento</li>
+                            <li>🗑️ Descarte inadequado de lixo e plásticos</li>
+                            <li>🏭 Resíduos de atividades industriais</li>
+                        </ul>
+                        <p><strong>Consequências:</strong> morte de peixes, contaminação da água que bebemos, doenças e prejuízos para a agricultura.</p>
+                    </div>
+                    <div class="imagem-ilustrativa">
+                        <!-- Gráfico ilustrativo feito com CSS -->
+                        <div class="grafico-css">
+                            <div class="barra-container">
+                                <span class="legenda">Rios poluídos no Brasil</span>
+                                <div class="barra barra-1"></div>
+                                <span class="percentual">60%</span>
+                            </div>
+                            <div class="barra-container">
+                                <span class="legenda">Nascentes degradadas</span>
+                                <div class="barra barra-2"></div>
+                                <span class="percentual">45%</span>
+                            </div>
+                            <p class="fonte-grafico">*Dados ilustrativos para conscientização</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOLUÇÕES SUSTENTÁVEIS -->
+        <section id="solucoes" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">🌱 Soluções Sustentáveis</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <div class="icone">💧</div>
+                        <h3>Preservação de Nascentes</h3>
+                        <p>Cercar nascentes, plantar árvores nativas e evitar o acesso de animais.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icone">🌿</div>
+                        <h3>Redução de Agrotóxicos</h3>
+                        <p>Usar defensivos naturais e técnicas de controle biológico de pragas.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icone">♻️</div>
+                        <h3>Reciclagem no Campo</h3>
+                        <p>Separar lixo, compostar resíduos orgânicos e recolher embalagens.</p>
+                    </article>
+                    <article class="card">
+                        <div class="icone">💡</div>
+                        <h3>Irrigação Eficiente</h3>
+                        <p>Gotejamento e captação de água da chuva para evitar desperdício.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO QUIZ INTERATIVO -->
+        <section id="quiz" class="secao fundo-claro">
+            <div class="container">
+                <h2 class="titulo-secao">📝 Quiz: Você sabe como preservar os rios?</h2>
+                <p class="subtitulo-quiz">Responda as perguntas e veja sua pontuação sobre práticas sustentáveis!</p>
+
+                <!-- Container do Quiz -->
+                <div id="quiz-container">
+                    <div id="pergunta-area">
+                        <p id="numero-pergunta"></p>
+                        <h3 id="texto-pergunta"></h3>
+                        <div id="opcoes-area"></div>
+                        <button id="btn-proximo" class="btn-quiz">Próxima Pergunta ➡</button>
+                        <button id="btn-reiniciar" class="btn-quiz reiniciar" style="display:none;">🔄 Recomeçar Quiz</button>
+                    </div>
+                    <div id="resultado-area" style="display:none;">
+                        <h3>🎉 Seu Resultado!</h3>
+                        <p id="pontuacao-texto"></p>
+                        <p id="mensagem-resultado"></p>
+                        <button id="btn-novo-quiz" class="btn-quiz">Fazer Quiz Novamente</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO/DICAS ADICIONAIS -->
+        <section id="contato" class="secao">
+            <div class="container">
+                <h2 class="titulo-secao">📢 Dicas para o Agricultor</h2>
+                <div class="dicas-container">
+                    <div class="dica">
+                        <p>✅ <strong>Dica 1:</strong> Nunca jogue embalagens de agrotóxicos em rios ou nascentes. Devolva ao local de compra.</p>
+                    </div>
+                    <div class="dica">
+                        <p>✅ <strong>Dica 2:</strong> Plante árvores ao redor das nascentes para proteger a água.</p>
+                    </div>
+                    <div class="dica">
+                        <p>✅ <strong>Dica 3:</strong> Faça a rotação de culturas para evitar o empobrecimento do solo.</p>
+                    </div>
+                </div>
+                <div class="contato-info">
+                    <p>🌐 <strong>EcoAgro</strong> - Agricultura sustentável para um futuro melhor!</p>
+                    <p>📧 Contato: contato@ecoagro.com.br</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!-- RODAPÉ DO SITE                               -->
+    <!-- ============================================ -->
+    <footer>
+        <div class="container">
+            <p>© 2026 EcoAgro - Concurso Agrinho 2026 | Desenvolvido para um futuro sustentável</p>
+            <p>🌍 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </footer>
+
+    <!-- Botão de acessibilidade fixo -->
+    <div id="botao-acessibilidade" class="btn-acessibilidade">
+        <button id="acessibilidade-btn">♿ Acessibilidade</button>
+        <div id="menu-acessibilidade" class="menu-acessivel" style="display:none;">
+            <button id="aumentar-fonte">A+ Aumentar Fonte</button>
+            <button id="diminuir-fonte">A- Diminuir Fonte</button>
+            <button id="alto-contraste">🌓 Alto Contraste</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
